@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family:Muli,Helvetica,Arial,sans-serif;
+list-style: none;
+font-size: 62.5%;
+border-style: none;
+}
+.center{
+  display: flex;
+  justify-content: center;
+}
+.login-content{
+  background:url(https://1curd3ms.trials.alfresco.com/assets/images/Wallpaper-BG-generic.svg);
+    background-repeat: no-repeat;
+   background-size: cover;
+    min-height: 100vh;
+    background-position: center center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ .container{
+  border-radius: 0.8rem;
+  background-color:rgb(255, 255, 255);
+box-shadow: 0 0.2rem 0.2rem #0000003d, 0 0 0.2rem #0000001f;
+padding: 2rem 6rem 3rem;
+width: 45rem;
+min-width: 32rem;
+height: 49.7rem;
+margin-top: 2.2rem;
+ }
+ .column-container{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+ }
+ .column-container-header{
+  margin: 2.4rem auto 11.6rem;
+ }
+ .column-container-body{
+display: flex; 
+flex-direction: column;
+width: 100%;
+}
+.input-container {
+  position: relative;
+  width: 100%;
+}
+
+input {
+  border-bottom: 0.18rem rgb(159, 159, 159) solid;
+  background-color: transparent;
+  width: 100%;
+  padding: 0.2rem; 
+  font-size: 1.4rem;
+}
+input:focus{
+  outline: none;
+}
+input:focus-visible {
+ border-bottom: 2px solid rgb(136, 23, 23);
+}
+label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none; 
+  transition: 0.3s;
+  font-size: 1.5rem;
+  color: #0009;
+}
+button{
+  box-shadow: 0 0 #0003, 0 0 #00000024, 0 0 #0000001f;
   color: white;
+  width: 32.2rem;
+  height: 3.6rem;
+  font-size: 1.4rem;
+  border-radius: 0.3rem;
+  background-color: #0000001f;
+  margin-top: -1.5rem;
 }
 
-.App-link {
-  color: #61dafb;
+.form-input {
+  width: 100%;
+  position: relative;
+  margin-bottom: 7.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer{
+  text-align: center;
+padding: 1.6rem 0;
+min-width: 32rem;
+}
+.footer{opacity: .54;
+  font-size: 1.2rem;
 }
